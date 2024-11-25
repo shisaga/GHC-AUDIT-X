@@ -1,0 +1,21 @@
+.profile-image {
+  position: relative;
+  border-radius: 8px;
+  .change-profile {
+    display: hidden;
+    position: absolute;
+    bottom: 0 !important;
+    height: 0 !important;
+    opacity: 0;
+  }
+}
+
+.profile-image:hover {
+  .change-profile {
+    display: flex;
+    background: rgba(84, 84, 84, 0.74);
+    height: 20% !important;
+    opacity: 1;
+    transition: height 0.1s ease;
+  }
+}

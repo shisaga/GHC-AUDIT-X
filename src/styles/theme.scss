@@ -1,0 +1,56 @@
+.form-input:focus,
+.form-textarea:focus,
+.form-multiselect:focus,
+.form-select:focus,
+.form-checkbox:focus,
+.form-radio:focus {
+  @apply ring-0;
+}
+
+[type="text"],
+[type="email"],
+[type="url"],
+[type="password"],
+[type="number"],
+[type="date"],
+[type="datetime-local"],
+[type="month"],
+[type="search"],
+[type="tel"],
+[type="time"],
+[type="week"],
+[multiple],
+textarea,
+select,
+.form-control,
+.form-input,
+.form-textarea,
+.form-multiselect,
+.form-select {
+  @apply rounded-normal border border-colorLighter;
+  &:focus {
+    @apply ring-0 border-themePrimary;
+  }
+}
+
+[type="radio"],
+[type="checkbox"],
+.form-radio,
+.form-checkbox {
+  @apply rounded-md cursor-pointer text-sm text-colorGray bg-colorWhite border;
+  &:checked,
+  &:checked:hover,
+  &:checked:focus {
+    @apply bg-themePrimary border-themePrimary;
+  }
+  &:focus {
+    @apply ring-0 border shadow-none outline-0 ring-offset-themePrimary;
+  }
+}
+.form-error {
+  border-color: var(--danger-red) !important;
+}
+.error-text {
+  line-height: 1.5 !important;
+  @apply tracking-wide text-colorDanger font-normal;
+}

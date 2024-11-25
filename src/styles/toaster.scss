@@ -1,0 +1,29 @@
+/* success toaster classes */
+
+.custom-success-toast .Toastify__toast-body {
+  background-color: var(--color-white);
+  font-weight: bold;
+  color: var(--color-primary);
+}
+.custom-success-toast .Toastify__progress-bar {
+  background-color: var(--color-primary);
+}
+.custom-success-toast svg {
+  fill: var(--color-primary);
+}
+.Toastify__spinner {
+  border-right-color: var(--color-primary) !important;
+}
+
+/* error toaster classes */
+
+.custom-error-toast .Toastify__toast-body {
+  background-color: var(--color-white);
+  color: var(--danger-red);
+  font-weight: 700;
+}
+
+.custom-warning-toast .Toastify__toast-body {
+  background-color: var(--color-white);
+  font-weight: 700;
+}
